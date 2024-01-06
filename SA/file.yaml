@@ -1,0 +1,8 @@
+a:
+  b:
+    - c: cool
+x:
+  y:
+    z: foobar
+person:
+  name: ""

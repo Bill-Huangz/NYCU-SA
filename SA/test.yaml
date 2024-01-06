@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: "2019-06-02T09:30:01Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  name: test
+  namespace: app-test
+  resourceVersion: "54534390"
+  selfLink: /api/v1/namespaces/test/persistentvolumeclaims/test
+  uid: c35e6108-46c4-4f71-809d
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: nfs-client
+  volumeMode: Filesystem
+  volumeName: pvc-c35e6108-46c4-4f71-809d
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  phase: Bound
